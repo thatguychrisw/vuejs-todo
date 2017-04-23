@@ -35,8 +35,10 @@ export default {
 
   methods: {
     add() {
-      this.todos.push({ message: this.newTodo });
-      this.newTodo = "";
+      if (this.newTodo) {
+        this.todos.push({ message: this.newTodo });
+        this.newTodo = "";
+      }
     },
 
     remove(todo) {
