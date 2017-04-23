@@ -25,6 +25,10 @@ export default {
 * {
   margin: 0;
   padding: 0;
+
+  &:focus, &:hover {
+    outline: 0;
+  }
 }
 
 #app {

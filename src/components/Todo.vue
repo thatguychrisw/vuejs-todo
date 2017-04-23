@@ -64,10 +64,6 @@ export default {
       font-size: 1.5em;
       border: 1px solid #E7E7E7;
       text-align: left;
-
-      &:focus {
-        outline: 0;
-      }
     }
 
     .todos {
