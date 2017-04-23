@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var bourbon = require('bourbon').includePaths
 
 module.exports = {
   entry: './src/main.js',
@@ -22,6 +23,13 @@ module.exports = {
             'sass': 'vue-style-loader!css-loader!sass-loader'
           }
           // other vue-loader options go here
+        }
+      },
+      {
+        test: /\.sass$/,
+        loader: "sass-loader",
+        options: {
+          includePaths: [bourbon]
         }
       },
       {

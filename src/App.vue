@@ -2,7 +2,7 @@
   <div id="app">
     <h2>TODO</h2>
     <h4>Using: VueJS</h4>
-    <todo></todo>    
+    <todo></todo>
   </div>
 </template>
 
@@ -21,7 +21,12 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="sass">
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-size: 67.5%;
