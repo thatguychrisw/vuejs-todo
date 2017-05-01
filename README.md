@@ -1,6 +1,4 @@
-# todo
-
-> A Vue.Js Example Todo App
+# A Vue.Js Example Todo App
 
 ## Build Setup
 
