@@ -16,40 +16,44 @@
 </template>
 
 <script>
+import Store from '../utils/Store.js'
+
 export default {
   name: 'todo',
-  inject: ["store"],
 
-  data() {
+  data () {
     return {
-      todos: this.store.fetch(),
-      newTodo: "",
+      todos: this.store().fetch(),
+      newTodo: ''
     }
   },
 
   watch: {
     todos: function () {
-      this.store.save(this.todos);
+      this.store().save(this.todos)
     }
   },
 
   methods: {
-    add() {
+    store () {
+      return Store
+    },
+
+    add () {
       if (this.newTodo) {
-        this.todos.push({ message: this.newTodo });
-        this.newTodo = "";
+        this.todos.push({ message: this.newTodo })
+        this.newTodo = ''
       }
     },
 
-    remove(todo) {
-      this.todos.splice(this.todos.indexOf(todo), 1);
+    remove (todo) {
+      this.todos.splice(this.todos.indexOf(todo), 1)
     }
   }
 }
 </script>
 
-<style lang="sass" scoped>
-@import "~bourbon/app/assets/stylesheets/bourbon";
+<style lang="scss" scoped>
 
 #todo {
     margin: 0 auto;
@@ -71,30 +75,30 @@ export default {
     .todos {
       width: 100%;
       text-align: left;
-      @include margin(2em 0);
+      margin: 2em 0;
 
       h1, h2, h3, h4, h5, h6 {
-        @include padding(.5em);
-        @include margin(.4em .2em);
+        padding: .5em;
+        margin: .4em .2em;
         font-size: 1.8em;
       }
 
       ul {
-        @include padding(null .1em 1em .1em);
+        padding: 0 .1em 1em .1em;
         margin: 0;
         list-style: none;
         text-align: left;
 
         li {
-          @include padding(.6em);
-          @include margin(.4em .2em);
+          padding: .6em;
+          margin: .4em .2em;
 
           list-style-type: none;
           font-size: 1.5em;
           border-bottom: 1px solid #E3E3E3;
 
           input[type="button"] {
-            @include margin(.5em);
+            margin: .5em;
             float: right;
             text-transform: uppercase;
             border: 0;

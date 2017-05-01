@@ -8,20 +8,16 @@
 
 <script>
 import Todo from './components/Todo.vue'
-import Store from './utils/Store.js';
 
 export default {
   name: 'app',
   components: {
     Todo
-  },
-  provide: {
-    store: Store
   }
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;

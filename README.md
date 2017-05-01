@@ -1,13 +1,6 @@
-# Todo - VueJS
+# todo
 
-## Goals
-
-- [x] Goal 1: Create VueJS scaffold, and initial components
-- [x] Goal 2: Create action handlers for adding and removing a task 
-- [x] Goal 3: Style the application
-- [ ] Goal 4: Create unit tests for the current functionality
-- [ ] Goal 5: Add the ability to edit tasks
-- [ ] Goal 6: Create integration tests
+> A Vue.Js Example Todo App
 
 ## Build Setup
 
@@ -20,4 +13,18 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
