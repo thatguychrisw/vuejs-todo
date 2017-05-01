@@ -1,5 +1,12 @@
 # A Vue.Js Example Todo App
 
+## Goals
+- [x] Convert project to the "webpack" vue-cli template
+- [ ] Finish Todo component unit test
+- [ ] Finish Store utility unit test
+- [ ] Finish Todo Iintegration test
+- [ ] Plan additional functionality
+
 ## Build Setup
 
 ``` bash
